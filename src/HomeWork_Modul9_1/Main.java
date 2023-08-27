@@ -1,26 +1,23 @@
 package HomeWork_Modul9_1;
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList<MyArrayList> myArrayLists = new ArrayList<MyArrayList>();
-        MyArrayList colorBlack = new MyArrayList("Black");
-        MyArrayList colorWhite = new MyArrayList("White");
-        MyArrayList colorGreen = new MyArrayList("Green");
-        myArrayLists.add(colorBlack);
-        myArrayLists.add(colorWhite);
-        myArrayLists.add(colorGreen);
+        MyArrayList myArray = new MyArrayList();
+        String colorBlack = "Black";
+        String colorWhite = "White";
+        String colorGreen = "Green";
+        myArray.add(colorBlack);
+        myArray.add(colorWhite);
+        myArray.add(colorGreen);
 
-        System.out.println(myArrayLists.size());
+        System.out.println(myArray.size());
 
-        MyArrayList secondColor = myArrayLists.get(1);
+        Object secondColor = myArray.get(1);
         System.out.println(secondColor);
 
-        myArrayLists.remove(0);
-        System.out.println(myArrayLists.contains(colorBlack));
+        myArray.remove(0);
 
-        myArrayLists.clear();
-        System.out.println(myArrayLists.toString());
+        myArray.clear();
+        System.out.println(myArray.toString());
     }
 
 }
