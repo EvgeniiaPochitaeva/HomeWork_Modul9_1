@@ -1,21 +1,19 @@
 package HomeWork_Modul9_1;
 
 public class MyArrayList {
-    private Object[] myArray; // Массив для хранения значений
-    private int size; // Текущее количество элементов в массив
+    private Object[] myArray;
+    private int size;
 
    private String color;
-//  public MyArrayList(String color) {
-//       this.color = color;
-//   }
+
     @Override
     public String toString() {
         return color;
     }
 
     public MyArrayList() {
-        myArray = new Object[10]; // Изначальная емкость по умолчанию
-        size = 0; // Нет элементов изначально
+        myArray = new Object[10];
+        size = 0;
     }
     public void add(Object value) {
         if (size == myArray.length) {
